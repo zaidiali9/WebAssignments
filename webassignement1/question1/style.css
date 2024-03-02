@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+
+  .resume {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .contact-info {
+    margin-top: 10px;
+  }
+
+  .contact-info p {
+    margin: 5px 0;
+    color: #666;
+  }
+
+  .section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .experience {
+    padding-left: 20px;
+    border-left: 2px solid #666;
+    margin-bottom: 20px;
+  }
+
+  .experience h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #666;
+  }
+
+  .experience p {
+    margin: 5px 0;
+    color: #777;
+  }
+
+  .photo-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .photo-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #eee;
+  }
+  .a4 {
+    width: 210mm;
+    height: 297mm;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
