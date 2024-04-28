@@ -1,14 +1,8 @@
 function createApplicationsTable(applications) {
   const table = document.getElementById("applicationsTable");
   const tbody = document.getElementById("applicationsTableBody");
-
-  // Clear previous data from the table body
   tbody.innerHTML = "";
-
-  // Create a row for the application
   const row = document.createElement("tr");
-
-  // Add the application data as cells in the row
   const data = [
     applications.personalInformation ? `${applications.personalInformation.firstName || ''} ${applications.personalInformation.lastName || ''}` : '',
     applications.personalInformation ? applications.personalInformation.phoneNumber || '' : '',
@@ -25,18 +19,12 @@ function createApplicationsTable(applications) {
     applications.additionalQuestions ? applications.additionalQuestions.whyWorkHere || '' : '',
     applications.consent ? (applications.consent.consent ? "Agreed to terms and conditions" : "") + ', ' + (applications.consent.privacyPolicy ? "Acknowledged privacy policy" : "") : '',
   ];
-
-  // Create cells for each data item and append to the row
   data.forEach((item, i) => {
     const cell = document.createElement("td");
     cell.textContent = item;
     row.appendChild(cell);
   });
-
-  // Append the row to the table body
   tbody.appendChild(row);
-
-  // Show the table
   table.style.display = "table";
 }
 
@@ -45,7 +33,6 @@ function createApplicationsTable(applications) {
 function submitApplication(event) {
     event.preventDefault();
   
-    // Validate form fields
     const firstName = document.getElementById('firstName').value;
     console.log(firstName);
     const lastName = document.getElementById('lastName').value;
